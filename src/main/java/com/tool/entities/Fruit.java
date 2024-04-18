@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Fruit extends Object {
+public class Fruit {
     private String name;
     private String category;
     private int price;

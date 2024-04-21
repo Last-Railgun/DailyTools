@@ -2,6 +2,7 @@ import com.tool.entities.Fruit;
 import com.tool.stream.ListStreamTool;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -42,5 +43,10 @@ public class ListTest {
         log.info("fruits: {}", fruits);
         ListStreamTool.setByPropertie(fruits, "category", "水果");
         log.info("newFruits: {}", fruits);
+    }
+
+    @Test
+    public void test04() {
+        log.info("{}", HttpStatus.OK.value());
     }
 }

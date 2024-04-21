@@ -37,3 +37,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/jdk-17.0.10_linux-x64_bin.tar.gz
+/Dockerfile

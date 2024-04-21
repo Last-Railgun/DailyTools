@@ -2,6 +2,7 @@ package com.tool.stream;
 
 import java.lang.reflect.Field;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListStreamTool {
     /**
@@ -22,7 +23,7 @@ public class ListStreamTool {
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
-        }).toList();
+        }).collect(Collectors.toList());    //此处兼容java8, 不直接使用toList()方法
     }
 
     /**
